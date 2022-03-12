@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_scrollEffect="compress"
+    android:layout_margin="5dp"
+    android:layout_height="196dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="121dp"
+        android:background="@color/hijaumentah"
+        >
+
+
+        <ImageView
+            android:id="@+id/imgfoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_launcher"
+
+            />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp"
+            android:textSize="9dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:textFontWeight="500"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="75.000"
+            android:id="@+id/txtharga"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:textFontWeight="500"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Satelit Paint"
+        android:id="@+id/txtnama"
+        android:textSize="13dp"
+
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:textFontWeight="500"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Cat sintetis dengan basis alkyd resin sangat cocok untuk melindungi dan memperindah warna permukaan barang – barang yang terbuat dari kayu maupun logam"
+        android:textSize="6dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txtdeskripsi"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:textFontWeight="300"
+        />
+</LinearLayout>

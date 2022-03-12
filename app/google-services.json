@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "762788079672",
+    "project_id": "satelitepaint-b27bb",
+    "storage_bucket": "satelitepaint-b27bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762788079672:android:d5208a63eb3ffcb47cdecd",
+        "android_client_info": {
+          "package_name": "com.satelit.satelitpaint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762788079672-tclsdhrq3js372uom425op3n5t6mejjd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.satelit.satelitpaint",
+            "certificate_hash": "d128626d7495a213d8774ec8eec03205a508d4be"
+          }
+        },
+        {
+          "client_id": "762788079672-sqe4md0di8r4a2k14kjmmfugm2a03rps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLz_MeVSaV4ud2tuMYIyDsk9pZqpiF3oo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762788079672-sqe4md0di8r4a2k14kjmmfugm2a03rps.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

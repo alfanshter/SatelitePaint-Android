@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+
+    android:layout_height="136dp">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/checkbox"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="94dp"
+        android:id="@+id/imgfoto"
+        android:layout_height="121dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/ic_launcher"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="13dp"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textFontWeight="900"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/txtnama"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:text="ROCKTON PENGERAS SEMEN / PENGUAT BETON"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="11dp"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/txtharga"
+            android:layout_height="wrap_content"
+            android:text="Rp. 78.000"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnmin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btcounter"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtcounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btnmin"
+                android:fontFamily="@font/roboto_mono_medium"
+                android:text="1"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnplus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/txtcounter"
+                android:background="@drawable/btcounter"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/btnhapus"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btnhapus"
+                android:backgroundTint="@color/black" />
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.satelit.satelitpaint">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoawal"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logoawal"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SatelitPaint"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".admin.BayarCicilanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.DetailCicilanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DaftarCicilanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.EditGambarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.SearchProdukAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.RiwayatAdminActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".service.FirebaseMessagingService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".SearchProdukActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.RincianPesananAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.SliderAdminActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.satelit.satelitpaint.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".MetodePembayaranActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PesananActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataPembeliActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KeranjangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailProdukActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.HomeAdminActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home_admin" />
+        <activity
+            android:name=".admin.AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.TambahProdukActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.DetailProdukActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.auth.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.satelit.satelitpaint.TARGETNOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+    </application>
+
+</manifest>

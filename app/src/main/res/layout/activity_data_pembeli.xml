@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_height="match_parent"
+    tools:context=".DataPembeliActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/statusbayar"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            android:textFontWeight="700"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:textColor="@color/black"
+            android:textSize="29dp"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pembeli"
+            android:textFontWeight="700"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:textColor="@color/hijau"
+            android:textSize="29dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama lengkap"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        />
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtnama"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/kotakinputproduk"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telepon"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        />
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:id="@+id/edttelepon"
+        android:background="@drawable/kotakinputproduk"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        />
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="68dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:id="@+id/edtalamat"
+        android:background="@drawable/kotakinputproduk"
+        />
+
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/hijau"
+        android:text="Selanjutnya"
+        android:id="@+id/btncheckout"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:cornerRadius="7dp"
+        android:layout_marginTop="20dp"
+        />
+
+
+</LinearLayout>

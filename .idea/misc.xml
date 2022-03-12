@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/drawable/kotakmenu.xml" value="0.1" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/activity_daftar_cicilan.xml" value="0.15534420289855072" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/activity_data_pembeli.xml" value="0.1480978260869565" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/activity_detail_cicilan.xml" value="0.1911231884057971" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/activity_detail_produk.xml" value="0.22" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/activity_detal_produk.xml" value="0.1911231884057971" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/activity_keranjang.xml" value="0.1480978260869565" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/activity_login2.xml" value="0.15" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/activity_metode_pembayaran.xml" value="0.1911231884057971" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/activity_pesanan.xml" value="0.25" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/activity_rincian_pesanan_admin.xml" value="0.1911231884057971" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/activity_slider_admin.xml" value="0.18" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/activity_tambah_produk.xml" value="0.18" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/fragment_cicilan.xml" value="0.1911231884057971" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/fragment_cicilan_user.xml" value="0.1911231884057971" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/fragment_home.xml" value="0.17037037037037037" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/fragment_maps.xml" value="0.5" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/fragment_report.xml" value="0.1911231884057971" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/fragment_transaksi_customer.xml" value="0.1911231884057971" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/fragment_update_jatuh_tempo.xml" value="0.25" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/list_bayarcicilan.xml" value="0.2866043613707165" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/list_cicilan.xml" value="0.33" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/list_detailpesanan.xml" value="0.1911231884057971" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/list_produkadmin.xml" value="0.1480978260869565" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/list_transaksi.xml" value="0.1911231884057971" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/listproduk.xml" value="0.1480978260869565" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/listshowslider.xml" value="0.1" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/layout/slidershimmer.xml" value="0.1" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/android/Satelit Paint/SatelitPaint/app/src/main/res/menu/bottom_user.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="produk">Produk</string>
+    <string name="report">Report</string>
+    <string name="profil">Profil</string>
+    <string name="keranjang">Keranjang</string>
+    <string name="transaksi">Transaksi</string>
+    <string name="peta">Peta</string>
+    <string name="default_notification_channel_id">TVac_CH_01</string>
+    <string name="cicilan">Cicilan</string>
+</resources>
