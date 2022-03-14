@@ -40,7 +40,7 @@ class SearchProdukActivity : AppCompatActivity() {
             ) {
                 val datalist = response.body()
 
-                mAdapter = datalist?.let { ProdukCustomerAdapter(it.data) }
+                mAdapter = datalist?.let { ProdukCustomerAdapter(it.data,this@SearchProdukActivity) }
                 rvsearch1.adapter = mAdapter
 
                 search.imeOptions = EditorInfo.IME_ACTION_SEARCH
@@ -52,9 +52,10 @@ class SearchProdukActivity : AppCompatActivity() {
                             if (action.isEmpty()){
                                 rvsearch1.visibility = View.VISIBLE
                                 rvsearch2.visibility = View.GONE
-                            }else if (action.length >1){
+                            }
+                            else if (action.length >1){
                                 val filter = datalist?.data?.filter { it.nama!!.contains("$action",true) }
-                                mAdapter = ProdukCustomerAdapter(filter as List<ProdukModel>)
+                                mAdapter = ProdukCustomerAdapter(filter as List<ProdukModel>,this@SearchProdukActivity)
                                 mAdapter!!.setDialog(object : ProdukCustomerAdapter.Dialog{
                                     override fun onClick(
                                         position: Int,
@@ -81,6 +82,7 @@ class SearchProdukActivity : AppCompatActivity() {
                                 if (action.isNotEmpty()){
                                     rvsearch2.visibility = View.VISIBLE
                                     rvsearch2.adapter = mAdapter
+
                                     rvsearch1.visibility = View.INVISIBLE
                                 }else{
                                     rvsearch1.visibility = View.VISIBLE

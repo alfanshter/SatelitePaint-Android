@@ -221,7 +221,7 @@ class PesananActivity : AppCompatActivity(),AnkoLogger {
                                 cell.border = Rectangle.NO_BORDER
                                 table.addCell(cell)
 
-                                cell = PdfPCell(Phrase("+6287729342351"))
+                                cell = PdfPCell(Phrase("0821-3816-1919"))
                                 cell.colspan = 5
                                 cell.border = Rectangle.NO_BORDER
                                 table.addCell(cell)

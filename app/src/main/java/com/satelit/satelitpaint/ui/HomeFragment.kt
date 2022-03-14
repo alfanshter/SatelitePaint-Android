@@ -144,7 +144,7 @@ class HomeFragment : Fragment(),AnkoLogger {
             binding.btnthinneraspecial.background.setTint(resources.getColor(R.color.abuputih))
             binding.btnthinneraspecial.textColor = resources.getColor(R.color.black)
 
-            binding.btnspiritus.background.setTint(R.color.white)
+            binding.btnspiritus.background.setTint(resources.getColor(R.color.abuputih))
             binding.btnspiritus.textColor = resources.getColor(R.color.black)
 
 
@@ -312,12 +312,12 @@ class HomeFragment : Fragment(),AnkoLogger {
                                     binding.txtnodata.visibility = View.GONE
                                     notesList.add(hasil)
                                     mAdapter =
-                                        ProdukCustomerAdapter(notesList)
+                                        ProdukCustomerAdapter(notesList,requireActivity())
                                     info { "dinda ${hasil.nama}" }
                                     binding.rvproduk.adapter = mAdapter
                                     mAdapter.notifyDataSetChanged()
                                 }
-                                mAdapter.setDialog(object : ProdukCustomerAdapter.Dialog {
+/*                                mAdapter.setDialog(object : ProdukCustomerAdapter.Dialog {
 
 
                                     override fun onClick(
@@ -341,7 +341,7 @@ class HomeFragment : Fragment(),AnkoLogger {
                                         )
                                     }
 
-                                })
+                                })*/
                             }
 
                         } else {
@@ -381,12 +381,12 @@ class HomeFragment : Fragment(),AnkoLogger {
                                 binding.rvproduk.visibility = View.VISIBLE
                                 notesList.add(hasil)
                                 mAdapter =
-                                    ProdukCustomerAdapter(notesList)
+                                    ProdukCustomerAdapter(notesList,requireActivity())
 
                                 binding.rvproduk.adapter = mAdapter
                                 mAdapter.notifyDataSetChanged()
                             }
-                            mAdapter.setDialog(object : ProdukCustomerAdapter.Dialog {
+/*                            mAdapter.setDialog(object : ProdukCustomerAdapter.Dialog {
 
 
                                 override fun onClick(
@@ -410,7 +410,7 @@ class HomeFragment : Fragment(),AnkoLogger {
                                     )
                                 }
 
-                            })
+                            })*/
                         } else {
                             toast("gagal mendapatkan response")
                         }

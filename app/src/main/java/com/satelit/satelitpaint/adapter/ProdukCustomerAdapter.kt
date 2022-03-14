@@ -14,12 +14,15 @@ import kotlin.collections.ArrayList
 import android.graphics.Movie
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.DiffUtil.DiffResult
+import com.satelit.satelitpaint.DetailProdukActivity
+import org.jetbrains.anko.startActivity
 import java.text.DecimalFormat
 import java.text.NumberFormat
 
 
 class ProdukCustomerAdapter(
-    private val notesList: List<ProdukModel>
+    private val notesList: List<ProdukModel>,
+    private val context: Context
     ) : RecyclerView.Adapter<ProdukCustomerAdapter.ViewHolder>(),Filterable {
 
     //database
@@ -85,20 +88,35 @@ class ProdukCustomerAdapter(
 
         holder.nama.text = "${note.nama!!.toUpperCase()}"
         holder.harga.text = "${harga}"
+        holder.deskripsi.text = note.deskripsi
         Picasso.get().load(note.foto.toString()).fit().into(holder.gambar)
         holder.itemView.setOnClickListener {
-            if (dialog != null) {
-                dialog!!.onClick(
-                    holder.layoutPosition,
-                    note.nama,
-                    note.harga!!,
-                    note.deskripsi!!,
-                    note.foto!!,
-                    note.rating!!,
-                    note.stok!!,
-                    note.id!!
+            try {
+                context.startActivity<DetailProdukActivity>(
+                    "nama" to note.nama,
+                    "harga" to note.harga,
+                    "deskripsi" to note.deskripsi,
+                    "foto" to note.foto,
+                    "rating" to note.rating,
+                    "stok" to note.stok,
+                    "id" to note.id
                 )
+
+            }catch (e :Exception){
+                return@setOnClickListener
             }
+//            if (dialog != null) {
+//                dialog!!.onClick(
+//                    holder.layoutPosition,
+//                    note.nama,
+//                    note.harga!!,
+//                    note.deskripsi!!,
+//                    note.foto!!,
+//                    note.rating!!,
+//                    note.stok!!,
+//                    note.id!!
+//                )
+//            }
         }
     }
 

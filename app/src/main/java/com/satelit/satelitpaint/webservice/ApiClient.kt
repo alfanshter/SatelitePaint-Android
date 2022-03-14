@@ -19,8 +19,8 @@ class ApiClient {
             return if (retrofit ==null){
                 retrofit = Retrofit.Builder().apply {
                     client(opt)
-//                    baseUrl("http://www.satelitpaint.pws-solution.com/public/api/")
-                    baseUrl("http://192.168.1.10:8000/api/")
+                    baseUrl("http://www.satelitpaint.pws-solution.com/public/api/")
+//                    baseUrl("http://192.168.1.10:8000/api/")
                     addConverterFactory(GsonConverterFactory.create())
                 }.build()
                 retrofit!!
